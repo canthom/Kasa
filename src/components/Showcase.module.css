@@ -1,0 +1,37 @@
+/* Showcase */
+.showcase {
+  height: 220px;
+  margin-bottom: 50px;
+  width: 100%;
+  position: relative;
+  display: grid;
+  place-items: center;
+  border-radius: var(--border-radius);
+  background: url(../components/assets/home-showcase.png) no-repeat center /
+    cover;
+}
+
+.showcase::after {
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: var(--color-black);
+  opacity: 0.3;
+  z-index: 1;
+  border-radius: var(--border-radius);
+}
+
+@media (max-width: 390px) {
+  .showcase {
+    height: 110px;
+    place-items: center start;
+  }
+
+  .showcase h1 {
+    font-size: 24px;
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,36 @@
+.card {
+  position: relative;
+  height: 340px;
+  width: 340px;
+  border-radius: var(--border-radius-small);
+  background-color: var(--primary-color);
+  padding: 20px;
+  display: flex;
+  align-items: flex-end;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.card__container {
+  margin-bottom: 50px;
+}
+
+.card::after {
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+  border-radius: var(--border-radius-small);
+}
+
+.card:hover {
+  transform: scale(1.05) translateY(-15px);
+}

@@ -1,0 +1,18 @@
+/* LocationList */
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: var(--color-white-2);
+  padding-top: 50px;
+  margin: 40px 0;
+  border-radius: var(--border-radius);
+}
+
+@media (max-width: 390px) {
+  .container {
+    padding: 0;
+    width: 100%;
+    margin-bottom: 0;
+  }
+}

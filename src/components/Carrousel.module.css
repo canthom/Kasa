@@ -1,0 +1,76 @@
+.carrousel {
+  height: 415px;
+  border-radius: 25px;
+  background-color: var(--primary-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.carrousel div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.pagination {
+  position: absolute;
+  font-size: 18px;
+  color: var(--color-white);
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+div.inactive {
+  display: none !important;
+  height: 1000px;
+}
+
+div.active {
+  display: block;
+}
+
+.chevron {
+  transition: all 0.2s;
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  bottom: 50%;
+}
+
+.chevron:first-of-type {
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+.chevron:first-of-type:hover {
+  transform: scale(1.1) translateY(-50%);
+}
+
+.chevron:nth-of-type(2) {
+  transform: rotate(180deg) translateY(50%);
+  right: 20px;
+}
+
+.chevron:nth-of-type(2):hover {
+  transform: rotate(180deg) scale(1.1) translateY(50%);
+}
+
+@media (max-width: 390px) {
+  .carrousel {
+    height: 255px;
+    border-radius: 10px;
+  }
+  .chevron {
+    height: 20px;
+  }
+  .pagination {
+    display: none;
+  }
+}

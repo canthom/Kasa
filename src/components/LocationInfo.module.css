@@ -1,0 +1,106 @@
+.location {
+  margin: 30px 0;
+  color: var(--primary-color);
+}
+
+.locationTitle h2 {
+  font-weight: 500;
+  font-size: 36px;
+}
+
+.locationTitle span {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.locationTop {
+  display: flex;
+  width: 100%;
+}
+
+.locationTitle {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.locationAuthor {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 18px;
+}
+
+.locationAuthor img {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+}
+
+.locationBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.locationTags {
+  display: flex;
+  margin-top: 20px;
+}
+
+.locationTag {
+  color: var(--color-white);
+  background-color: var(--primary-color);
+  margin-right: 10px;
+  border-radius: 10px;
+  padding: 5px 40px;
+}
+
+.locationStars {
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  .locationTitle h2 {
+    font-size: 18px;
+  }
+
+  .locationTitle span {
+    font-size: 14px;
+  }
+
+  .locationAuthor {
+    font-size: 12px;
+  }
+
+  .locationAuthor img {
+    height: 32px;
+    width: 32px;
+  }
+
+  .locationBottom {
+    flex-direction: column;
+  }
+
+  .locationTags {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-start;
+  }
+
+  .locationTag {
+    padding: 2.5px 30px;
+    font-size: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+
+  .locationNote {
+    align-self: flex-start;
+  }
+
+  .locationStars li svg {
+    height: 18px;
+    width: 18px;
+  }
+}
