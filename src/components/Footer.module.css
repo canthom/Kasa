@@ -1,6 +1,6 @@
 /* Footer */
 .footer {
-  height: 200px;
+  height: 20rem;
   background-color: var(--color-black);
   color: var(--color-white);
   display: flex;
@@ -10,10 +10,10 @@
 }
 
 .footer__logo {
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 37.5rem) {
   .footer {
     margin: 0;
   }

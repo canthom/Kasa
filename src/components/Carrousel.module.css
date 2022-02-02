@@ -1,6 +1,6 @@
 .carrousel {
-  height: 415px;
-  border-radius: 25px;
+  height: 41.5rem;
+  border-radius: 2.5rem;
   background-color: var(--primary-color);
   position: relative;
   overflow: hidden;
@@ -14,9 +14,9 @@
 
 .pagination {
   position: absolute;
-  font-size: 18px;
+  font-size: 1.8rem;
   color: var(--color-white);
-  bottom: 25px;
+  bottom: 2.5rem;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -29,7 +29,7 @@
 
 div.inactive {
   display: none !important;
-  height: 1000px;
+  height: 100rem;
 }
 
 div.active {
@@ -45,7 +45,7 @@ div.active {
 }
 
 .chevron:first-of-type {
-  left: 20px;
+  left: 2rem;
   transform: translateY(-50%);
 }
 
@@ -55,20 +55,20 @@ div.active {
 
 .chevron:nth-of-type(2) {
   transform: rotate(180deg) translateY(50%);
-  right: 20px;
+  right: 2rem;
 }
 
 .chevron:nth-of-type(2):hover {
   transform: rotate(180deg) scale(1.1) translateY(50%);
 }
 
-@media (max-width: 390px) {
+@media (max-width: 37.5rem) {
   .carrousel {
-    height: 255px;
-    border-radius: 10px;
+    height: 25.5rem;
+    border-radius: 1rem;
   }
   .chevron {
-    height: 20px;
+    height: 2rem;
   }
   .pagination {
     display: none;

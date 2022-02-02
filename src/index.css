@@ -7,14 +7,19 @@
   box-sizing: border-box;
 }
 
+html {
+  /* 1rem = 10px */
+  font-size: 62.5%;
+}
+
 /* Variables */
 :root {
   --primary-color: #ff6060;
   --color-black: #000;
   --color-white: #fff;
   --color-white-2: #f6f6f6;
-  --border-radius: 25px;
-  --border-radius-small: 10px;
+  --border-radius: 2.5rem;
+  --border-radius-small: 1rem;
 }
 
 /* General Styles */
@@ -39,12 +44,12 @@ ol {
 }
 
 #root {
-  max-width: 1240px;
+  max-width: 124rem;
   margin: 0 auto;
 }
 
 .heading-1 {
-  font-size: 48px;
+  font-size: 4.8rem;
   color: var(--color-white);
   z-index: 10;
 }
@@ -52,17 +57,21 @@ ol {
 .heading-3 {
   color: var(--color-white);
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.8rem;
   z-index: 10;
 }
 
 .main {
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 37.5rem) {
   .main {
-    padding: 0 20px;
+    padding: 0 2rem;
     margin-bottom: 0;
+  }
+
+  .heading-1 {
+    padding-left: 1.6rem;
   }
 }

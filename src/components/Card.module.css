@@ -1,10 +1,10 @@
 .card {
   position: relative;
-  height: 340px;
-  width: 340px;
+  height: 34rem;
+  width: 34rem;
   border-radius: var(--border-radius-small);
   background-color: var(--primary-color);
-  padding: 20px;
+  padding: 2rem;
   display: flex;
   align-items: flex-end;
   transition: all 0.2s;
@@ -12,7 +12,7 @@
 }
 
 .card__container {
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
 }
 
 .card::after {
@@ -32,5 +32,11 @@
 }
 
 .card:hover {
-  transform: scale(1.05) translateY(-15px);
+  transform: scale(1.05) translateY(-1.5rem);
+}
+
+@media (max-width: 37.5rem) {
+  .card__container:first-of-type {
+    margin-top: 5rem;
+  }
 }

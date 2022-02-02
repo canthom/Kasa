@@ -6,37 +6,37 @@
   align-items: center;
 }
 .error span:first-child {
-  font-size: 288px;
+  font-size: 28.8rem;
   font-weight: 700;
 }
 
 .error span:last-of-type {
-  font-size: 36px;
+  font-size: 3.6rem;
 }
 
 .error a {
-  margin-top: 180px;
-  font-size: 18px;
+  margin-top: 18rem;
+  font-size: 1.8rem;
   text-decoration: underline;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 37.5rem) {
   .error {
-    margin: 80px 0 100px;
+    margin: 8rem 0 11rem;
   }
   .error span:first-child {
-    font-size: 96px;
+    font-size: 9.6rem;
     font-weight: 700;
   }
 
   .error span:last-of-type {
-    font-size: 18px;
+    font-size: 1.8rem;
     text-align: center;
   }
 
   .error a {
-    margin-top: 130px;
-    font-size: 14px;
+    margin-top: 13rem;
+    font-size: 1.4rem;
     text-decoration: underline;
   }
 }
