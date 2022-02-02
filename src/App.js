@@ -7,7 +7,7 @@ import Location from './pages/Location';
 import AboutPage from './pages/AboutPage';
 import NotFound from './pages/NotFound';
 import Footer from './components/Footer';
-// import Data from './data/logements.json';
+import ErrorBoundary from './components/ErrorBoundary';
 
 class App extends React.Component {
   constructor(props) {
@@ -20,7 +20,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    fetch('logements.json')
+    fetch('./logements.json')
       .then((response) => response.json())
       .then(
         (result) => {
@@ -39,11 +39,6 @@ class App extends React.Component {
   }
 
   render() {
-    const { error, isLoaded, items } = this.state;
-    if (error) {
-      alert(`Vous avez une erreur : ${error.message}`);
-    }
-
     return (
       <Router>
         <Header />
@@ -54,13 +49,16 @@ class App extends React.Component {
               <LocationList locations={this.state.items} />
             </Route>
             <Route
+              exact
               path="/location/:id"
               render={(props) => (
+                //<ErrorBoundary>
                 <Location
                   id={props.match.params.id}
                   data={this.state.items}
                   {...props}
                 />
+                //</ErrorBoundary>
               )}
             />
             <Route path="/about">

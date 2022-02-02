@@ -1,19 +1,27 @@
 import React from 'react';
+import { Redirect } from 'react-router-dom';
 import Carrousel from '../components/Carrousel';
 import LocationInfo from '../components/LocationInfo';
 import Dropdown from '../components/Dropdown';
 import styles from './Location.module.css';
 
 class Location extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false };
+  }
+
   render() {
     const dataFiltered = this.props.data.filter(
       (element) => element.id === this.props.match.params.id
     );
+
+    if (dataFiltered.length === 0) {
+      return <Redirect to="/NotFound" />;
+    }
+
     const locationInfo = dataFiltered[0];
 
-    if (locationInfo.id != this.props.match.params.id) {
-      alert('coucou cé mwa');
-    }
     return (
       <>
         <Carrousel pictures={locationInfo.pictures} />

@@ -37,21 +37,26 @@ class Carrousel extends React.Component {
   render() {
     return (
       <div className={styles.carrousel}>
-        <img
-          src={chevron}
-          alt="Précédent"
-          className={styles.chevron}
-          onClick={this.goToPrevSlide}
-        />
-        <img
-          src={chevron}
-          alt="Suivant"
-          className={styles.chevron}
-          onClick={this.goToNextSlide}
-        />
-        <span className={styles.pagination}>
-          {this.state.activeIndex + 1} / {this.props.pictures.length}
-        </span>
+        {this.props.pictures.length === 1 ? null : (
+          <>
+            <img
+              src={chevron}
+              alt="Précédent"
+              className={styles.chevron}
+              onClick={this.goToPrevSlide}
+            />
+            <img
+              src={chevron}
+              alt="Suivant"
+              className={styles.chevron}
+              onClick={this.goToNextSlide}
+            />
+            <span className={styles.pagination}>
+              {this.state.activeIndex + 1} / {this.props.pictures.length}
+            </span>
+          </>
+        )}
+
         {this.props.pictures.map((element, index) => {
           return (
             <div
