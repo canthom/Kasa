@@ -24,10 +24,10 @@
   border-radius: var(--border-radius);
 }
 
-@media (max-width: 37.5rem) {
+@media (max-width: 375px) {
   .showcase {
     height: 11rem;
-    width: 30rem;
+    width: 34rem;
     place-items: center start;
     margin: 0 auto;
     margin-bottom: 5rem;
@@ -39,7 +39,7 @@
   }
 }
 
-@media (max-width: 28rem) {
+@media (max-width: 280px) {
   .showcase {
     width: 22.5rem;
   }

@@ -59,7 +59,7 @@
   display: flex;
 }
 
-@media (max-width: 37.5rem) {
+@media (max-width: 375px) {
   .locationTitle h2 {
     font-size: 1.8rem;
   }

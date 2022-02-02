@@ -20,7 +20,7 @@
   text-decoration: underline;
 }
 
-@media (max-width: 37.5rem) {
+@media (max-width: 375px) {
   .error {
     margin: 8rem 0 11rem;
   }

@@ -62,7 +62,7 @@ div.active {
   transform: rotate(180deg) scale(1.1) translateY(50%);
 }
 
-@media (max-width: 37.5rem) {
+@media (max-width: 375px) {
   .carrousel {
     height: 25.5rem;
     border-radius: 1rem;

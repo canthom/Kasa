@@ -7,6 +7,7 @@
   box-sizing: border-box;
 }
 
+:root,
 html {
   /* 1rem = 10px */
   font-size: 62.5%;
@@ -65,16 +66,17 @@ ol {
   margin-bottom: 5rem;
 }
 
-@media (max-width: 76.8rem) {
+@media (max-width: 768px) {
   .main {
     padding: 0 2rem;
   }
+
   .heading-1 {
-    padding-left: 1.6rem;
+    margin-left: 1.6rem;
   }
 }
 
-@media (max-width: 37.5rem) {
+@media (max-width: 375px) {
   .main {
     margin-bottom: 0;
   }

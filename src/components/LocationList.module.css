@@ -9,11 +9,12 @@
   border-radius: var(--border-radius);
 }
 
-@media (max-width: 37.5rem) {
+@media (max-width: 375px) {
   .container {
     padding: 0;
     width: 100%;
     margin-bottom: 0;
     margin: 4rem 0;
+    background-color: transparent;
   }
 }

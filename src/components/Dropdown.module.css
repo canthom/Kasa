@@ -37,13 +37,13 @@
   transform: rotate(0) !important;
 }
 
-@media (max-width: 76.8rem) {
+@media (max-width: 768px) {
   .dropdown {
     width: 100%;
   }
 }
 
-@media (max-width: 37.5rem) {
+@media (max-width: 375px) {
   .dropdown p,
   .dropdown li {
     font-size: 1.2rem;
