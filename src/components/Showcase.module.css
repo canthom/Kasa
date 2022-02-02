@@ -27,12 +27,24 @@
 @media (max-width: 37.5rem) {
   .showcase {
     height: 11rem;
-    /* width: 32rem; */
+    width: 30rem;
     place-items: center start;
+    margin: 0 auto;
+    margin-bottom: 5rem;
   }
 
   .showcase h1 {
     font-size: 2.4rem;
     font-weight: 400;
+  }
+}
+
+@media (max-width: 28rem) {
+  .showcase {
+    width: 22.5rem;
+  }
+
+  .showcase h1 {
+    font-size: 2rem;
   }
 }

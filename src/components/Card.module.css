@@ -35,8 +35,9 @@
   transform: scale(1.05) translateY(-1.5rem);
 }
 
-@media (max-width: 37.5rem) {
-  .card__container:first-of-type {
-    margin-top: 5rem;
+@media (max-width: 28rem) {
+  .card {
+    width: 22.5rem;
+    height: 22.5rem;
   }
 }

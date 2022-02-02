@@ -27,11 +27,13 @@
   text-decoration: underline;
 }
 
-@media (max-width: 37.5rem) {
+@media (max-width: 76.8rem) {
   .header {
     padding: 0 2rem;
   }
+}
 
+@media (max-width: 37.5rem) {
   .header__logo img {
     width: 14.5rem;
   }
@@ -43,5 +45,12 @@
 
   .header__link:first-of-type {
     margin-right: 1.5rem;
+  }
+}
+
+@media (max-width: 28rem) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
   }
 }
