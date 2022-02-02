@@ -1,5 +1,12 @@
 .location {
   margin: 3rem 0;
+}
+
+.locationTop {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 2.5rem 0;
   color: var(--primary-color);
 }
 
@@ -13,11 +20,6 @@
   font-weight: 500;
 }
 
-.locationTop {
-  display: flex;
-  width: 100%;
-}
-
 .locationTitle {
   flex: 1;
   display: flex;
@@ -27,19 +29,22 @@
 .locationAuthor {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   font-size: 1.8rem;
+  min-width: min-content;
+}
+
+.locationAuthor span {
+  width: min-content;
+  text-align: right;
+  line-height: 140%;
 }
 
 .locationAuthor img {
   height: 6.4rem;
   width: 6.4rem;
   border-radius: 50%;
-}
-
-.locationBottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  margin-left: 1rem;
 }
 
 .locationTags {
@@ -55,13 +60,38 @@
   padding: 0.5rem 4rem;
 }
 
+.locationTitle,
+.locationAuthor,
+.locationTags,
+.locationNote {
+  flex-basis: 50%;
+}
+
+.locationNote {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .locationStars {
   display: flex;
 }
 
+.locationStars li {
+  margin: 0 0.2rem;
+}
+
 @media (max-width: 375px) {
+  .locationTop {
+    align-items: center;
+  }
+
+  .locationTitle {
+    flex-basis: 100%;
+  }
+
   .locationTitle h2 {
     font-size: 1.8rem;
+    margin-bottom: 0.5rem;
   }
 
   .locationTitle span {
@@ -77,15 +107,12 @@
     width: 3.2rem;
   }
 
-  .locationBottom {
-    flex-direction: column;
-  }
-
   .locationTags {
     margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
     align-self: flex-start;
+    flex-basis: 100%;
   }
 
   .locationTag {
@@ -96,11 +123,19 @@
   }
 
   .locationNote {
-    align-self: flex-start;
+    margin-top: 1.5rem;
+    justify-content: flex-start;
+    flex-basis: 50%;
   }
 
   .locationStars li svg {
     height: 1.8rem;
     width: 1.8rem;
+  }
+
+  .locationAuthor {
+    margin-top: 1.5rem;
+    flex-basis: 50%;
+    order: 5;
   }
 }

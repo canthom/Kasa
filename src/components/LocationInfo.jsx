@@ -53,37 +53,33 @@ class LocationInfo extends React.Component {
     };
 
     return (
-      <div className={styles.location}>
-        <div className={styles.locationTop}>
-          <div className={styles.locationTitle}>
-            <h2>{this.props.title}</h2>
-            <span>{this.props.location}</span>
-          </div>
+      <div className={styles.locationTop}>
+        <div className={styles.locationTitle}>
+          <h2>{this.props.title}</h2>
+          <span>{this.props.location}</span>
+        </div>
 
-          <div className={styles.locationAuthor}>
-            <span>{this.props.author.name}</span>
-            <div>
-              <img src={this.props.author.picture} alt="Author" />
-            </div>
+        <div className={styles.locationAuthor}>
+          <span>{this.props.author.name}</span>
+          <div>
+            <img src={this.props.author.picture} alt="Author" />
           </div>
         </div>
 
-        <div className={styles.locationBottom}>
-          <div className={styles.locationTags}>
-            {this.props.tags.map((element) => {
-              return (
-                <div className={styles.locationTag} key={element}>
-                  {element}
-                </div>
-              );
-            })}
-          </div>
+        <div className={styles.locationTags}>
+          {this.props.tags.map((element) => {
+            return (
+              <div className={styles.locationTag} key={element}>
+                {element}
+              </div>
+            );
+          })}
+        </div>
 
-          <div className={styles.locationNote}>
-            <ul className={styles.locationStars}>
-              {getRating(this.props.rating)}
-            </ul>
-          </div>
+        <div className={styles.locationNote}>
+          <ul className={styles.locationStars}>
+            {getRating(this.props.rating)}
+          </ul>
         </div>
       </div>
     );
