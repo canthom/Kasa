@@ -7,7 +7,7 @@ import Location from './pages/Location';
 import AboutPage from './pages/AboutPage';
 import NotFound from './pages/NotFound';
 import Footer from './components/Footer';
-import ErrorBoundary from './components/ErrorBoundary';
+// import ErrorBoundary from './components/ErrorBoundary';
 
 class App extends React.Component {
   constructor(props) {
