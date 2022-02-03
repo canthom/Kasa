@@ -12,13 +12,14 @@ class Location extends React.Component {
   }
 
   render() {
+    console.log(this.props);
     const dataFiltered = this.props.data.filter(
       (element) => element.id === this.props.match.params.id
     );
 
-    if (dataFiltered.length === 0) {
-      return <Redirect to="/NotFound" />;
-    }
+    // if (dataFiltered.length === 0) {
+    //   return <Redirect to="/NotFound" />;
+    // }
 
     const locationInfo = dataFiltered[0];
 
