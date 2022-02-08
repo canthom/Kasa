@@ -1,29 +1,27 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
-import Carrousel from '../components/Carrousel';
-import LocationInfo from '../components/LocationInfo';
-import Dropdown from '../components/Dropdown';
+import Carrousel from '../../components/carrousel/Carrousel';
+import LocationInfo from '../../components/locationInfo/LocationInfo';
+import Dropdown from '../../components/dropdown/Dropdown';
 import styles from './Location.module.css';
+import Loader from '../../components/loader/Loader';
 
 class Location extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { hasError: false };
-  }
-
   render() {
-    console.log(this.props);
-    const dataFiltered = this.props.data.filter(
+    let dataFiltered = this.props.locations.filter(
       (element) => element.id === this.props.match.params.id
     );
 
-    // if (dataFiltered.length === 0) {
-    //   return <Redirect to="/NotFound" />;
-    // }
-
+    const dataNotLoaded = dataFiltered.length === 0;
     const locationInfo = dataFiltered[0];
 
-    return (
+    if (this.props.isLoaded === false) {
+      return <Loader />;
+    }
+
+    return dataNotLoaded ? (
+      <Redirect to="/NotFound" />
+    ) : (
       <>
         <Carrousel pictures={locationInfo.pictures} />
         <LocationInfo

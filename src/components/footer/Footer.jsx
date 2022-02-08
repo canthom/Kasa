@@ -1,9 +1,9 @@
-import React from 'react'
-import logo from './assets/Logo-Footer.svg'
-import styles from './Footer.module.css'
+import React from 'react';
+import logo from '../assets/Logo-Footer.svg';
+import styles from './Footer.module.css';
 
 class Footer extends React.Component {
-  render () {
+  render() {
     return (
       <footer className={styles.footer}>
         <span className={styles.footer__logo}>
@@ -13,8 +13,8 @@ class Footer extends React.Component {
           &copy; 2020 Kasa. All rights reserved
         </span>
       </footer>
-    )
+    );
   }
 }
 
-export default Footer
+export default Footer;

@@ -1,9 +1,13 @@
 .dropdown {
   margin: 0 auto 3rem;
-  width: 102rem;
+  width: 100%;
   font-size: 2.4rem;
   border-radius: 0.5rem;
   overflow: hidden;
+}
+
+.dropdownAbout {
+  width: 80%;
 }
 
 .dropdown__top {

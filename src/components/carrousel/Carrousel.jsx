@@ -1,5 +1,5 @@
 import React from 'react';
-import chevron from './assets/Chevron-Carrousel.svg';
+import chevron from '../assets/Chevron-Carrousel.svg';
 import styles from './Carrousel.module.css';
 import PropTypes from 'prop-types';
 

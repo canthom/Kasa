@@ -1,5 +1,5 @@
 import React from 'react';
-import chevron from './assets/Chevron-Dropdown.svg';
+import chevron from '../assets/Chevron-Dropdown.svg';
 import styles from './Dropdown.module.css';
 import PropTypes from 'prop-types';
 
@@ -13,7 +13,11 @@ class Dropdown extends React.Component {
   render() {
     const isActive = this.state.isActive;
     return (
-      <div className={styles.dropdown}>
+      <div
+        className={`${styles.dropdown} ${
+          this.props.page ? styles.dropdownAbout : null
+        }`}
+      >
         <div className={styles.dropdown__top} onClick={this.handleClick}>
           <span className={styles.dropdown__title}>{this.props.title}</span>
           <img

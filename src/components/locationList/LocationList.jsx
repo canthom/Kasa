@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from './Card';
+import Card from '../card/Card';
 import styles from './LocationList.module.css';
 
 class LocationList extends React.Component {

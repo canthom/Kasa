@@ -7,7 +7,7 @@
   display: grid;
   place-items: center;
   border-radius: var(--border-radius);
-  background: url(../components/assets/home-showcase.png) no-repeat center /
+  background: url(../../components/assets/home-showcase.png) no-repeat center /
     cover;
 }
 
