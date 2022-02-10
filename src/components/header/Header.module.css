@@ -27,7 +27,7 @@
   text-decoration: underline;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 912px) {
   .header {
     padding: 0 2rem;
   }

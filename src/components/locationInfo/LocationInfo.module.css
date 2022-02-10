@@ -80,7 +80,7 @@
   margin: 0 0.2rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 912px) {
   .locationTop {
     align-items: center;
   }

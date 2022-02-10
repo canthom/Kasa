@@ -41,7 +41,7 @@
   transform: rotate(0) !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 912px) {
   .dropdown {
     width: 100%;
   }
